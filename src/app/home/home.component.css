@@ -33,6 +33,59 @@
     padding-top: 15px;
 }
 
+
+.btn-outline-light-responsive {
+    display: inline-block;
+    font-weight: 400;
+    color: #f8f9fa;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-outline-light-responsive:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+    text-decoration: none;
+}
+
+.btn-primary-responsive {
+    color: #fff;
+    background-color:#007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #007bff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary-responsive:hover {
+    background-color: #006adb;
+    border-color: #006adb;
+    text-decoration: none;
+}
+
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
     .carousel-caption h1 {
@@ -61,6 +114,14 @@
         top: 40%;
     }
 }
+@media (max-width: 524px) {
+    .btn-outline-light-responsive {
+        font-size: 0.85rem;
+    }
+    .btn-primary-responsive {
+        font-size: 0.85rem;
+    }
+}
 @media (max-width: 476px) {
     .carousel-caption h1 {
         font-size: 90%;
@@ -71,5 +132,10 @@
     .carousel-caption {
         top: 35%;
     }
-  
+    .btn-outline-light-responsive {
+        font-size: 0.75rem;
+    }
+    .btn-primary-responsive {
+        font-size: 0.75rem;
+    }
 }
