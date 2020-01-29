@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
     <a class="navbar-brand" href="#">BudgetApp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,22 +9,22 @@
       <ul class="navbar-nav mr-auto">
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="" [ngClass]="{ 'active': currentTab == '/' }">Hjem <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="" [ngClass]="{ 'active': currentTab == '/' }">Hjem</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="about" [ngClass]="{ 'active': currentTab.includes('about') }">About</a>
+          <a class="nav-link" routerLink="about" [ngClass]="{ 'active': currentTab.includes('about') }">Om os</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown pointer-cursor">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item">Action</a>
+            <a class="dropdown-item">Another action</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item">Something else here</a>
           </div>
         </li>
 
@@ -36,5 +37,12 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="logind" [ngClass]="{ 'active': currentTab.includes('logind') }">Log ind</a>
+        </li>
+      </ul>
+
     </div>
 </nav>
