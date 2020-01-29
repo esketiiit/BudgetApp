@@ -13,18 +13,27 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="about" [ngClass]="{ 'active': currentTab.includes('about') }">Om os</a>
+          <a class="nav-link">Wubba</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">Lubba</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">Dub Dub</a>
         </li>
 
         <li class="nav-item dropdown pointer-cursor">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+          [ngClass]="{ 'active': currentTab.includes('about') }">
+            Om os
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item">Action</a>
-            <a class="dropdown-item">Another action</a>
+            <a class="dropdown-item" routerLink="om-os">Om os</a>
+            <a class="dropdown-item" routerLink="features">Features</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item">Something else here</a>
+            <a class="dropdown-item" routerLink="demo">Demo</a>
           </div>
         </li>
 
